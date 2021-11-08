@@ -1,0 +1,199 @@
+#profile {
+    height: 128px;
+    width: 128px;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.text-box {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.fixed-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animated-text {
+    display: inline-block;
+    height: 113px;
+    overflow: hidden;
+}
+
+.animated-text span {
+    position: relative;
+    display: block;
+}
+
+.animated-text span:hover {
+    color: blue;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid #02095a;
+    right: -2px;
+    background-color: #e9ecef;
+    animation: textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(33);
+    animation-fill-mode: backwards;
+    animation-duration: 3s;
+}
+
+@keyframes textType {
+    0%{
+        left: 0;  
+      }
+      50%{
+        left: 100%;  
+      }
+      65%{
+        left: 100%;  
+      }
+      100%{
+        left: 0;  
+      }
+      0%{
+        left: 0;  
+      }
+}
+
+.social-media {
+    height: 32px;
+    width: 32px;
+    border: #000000 solid 1px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.social-media:hover {
+    height: 38px;
+    width: 38px;
+    border: #ffff00;
+}
+
+#menu-button {
+    height: 64px;
+    width: 128px;
+    border: white;
+}
+
+#menu {
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+}
+
+#menu:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: black;
+}
+
+#source-code-button {
+    background-color: transparent;
+    color: blue;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    border-color: blue;
+    font-size: 15px;
+}
+
+#source-code-button:hover {
+    animation-name: scbh;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+@keyframes scbh {
+    0%{
+        background-color: transparent;
+        color: blue;
+        height: 30px;
+        width: 200px;
+        border-radius: 50px;
+    }
+    100%{
+        background-color: blue;
+        color: white;
+        height: 30px;
+        width: 200px;
+        border-radius: 50px;
+    }
+}
+
+.dull-cover {
+    width: 100%;
+    background-color: #e9ecef;
+    padding-bottom: 30px;
+}
+
+#des {
+    font-size: 20px;
+}
+
+.border {
+    border-top: 2px black solid;
+    border-left: 2px black solid;
+    border-bottom: 5px black solid;
+    border-right: 5px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    margin-top: 30px;
+    box-shadow: blue;
+    margin-left: 30px;
+}
+
+.item-img {
+    width: 230px;
+}
+
+.flex-border {
+    display: flex;
+}
+
+#top-bar {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#top-bar-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+}
+
+#logo-paper {
+    width: 100%;
+    height: 100%;
+    box-shadow: black 10px;
+}
