@@ -195,7 +195,7 @@ body {
 }
 
 .flex-border {
-    display: flex;
+    display: inline-block;
 }
 
 #top-bar {
