@@ -1,10 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #profile {
     height: 128px;
     width: 128px;
-    border: solid;
+    border: solid 1px black;
     border-radius: 50%;
     margin-top: 3%;
     margin-bottom: 3%;
+}
+
+#profile:hover {
+    animation-name: profile;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    height: 135px;
+    width: 135px;
+}
+
+@keyframes profile {
+    0%{
+    height: 128px;
+    width: 128px;
+    border: solid 1px black;
+    border-radius: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    }
+    100%{
+        height: 135px;
+        width: 135px;
+    }
 }
 
 .text-box {
@@ -160,6 +188,7 @@
     margin-top: 30px;
     box-shadow: blue;
     margin-left: 30px;
+    display: inline-block;
 }
 
 .item-img {
